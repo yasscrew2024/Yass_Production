@@ -91,14 +91,6 @@
       gap: 1rem;
     }
 
-    .product img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
-    }
-
     .wa-order {
       margin-top: 2rem;
       text-align: center;
@@ -136,32 +128,7 @@
       font-size: 0.75rem;
       margin-left: 0.5rem;
     }
-
-    .tentang-img {
-      width: 100%;
-      max-width: 800px;
-      margin: 1rem auto;
-      display: block;
-      border-radius: 10px;
-    }
-
-    .social-icons {
-      margin-top: 1rem;
-    }
-
-    .social-icons a {
-      margin: 0 0.5rem;
-      color: white;
-      text-decoration: none;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #25D366;
-    }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script>
     const translations = {
       id: {
@@ -181,6 +148,33 @@
         mitra: "Our Partners",
         kontak: "Contact",
         order: "Order Now via WhatsApp"
+      },
+      zh: {
+        title: "Yass Production",
+        tentang: "关于我们",
+        produk: "产品",
+        testimoni: "客户评价",
+        mitra: "我们的合作伙伴",
+        kontak: "联系方式",
+        order: "通过WhatsApp下单"
+      },
+      ja: {
+        title: "Yass Production",
+        tentang: "私たちについて",
+        produk: "製品",
+        testimoni: "お客様の声",
+        mitra: "パートナー",
+        kontak: "連絡先",
+        order: "WhatsAppで今すぐ注文"
+      },
+      ar: {
+        title: "ياس برودكشن",
+        tentang: "معلومات عنا",
+        produk: "المنتجات",
+        testimoni: "آراء العملاء",
+        mitra: "شركاؤنا",
+        kontak: "اتصال",
+        order: "اطلب الآن عبر واتساب"
       }
     };
 
@@ -218,18 +212,65 @@
     <select id="language" onchange="changeLanguage(this.value)">
       <option value="id">Bahasa Indonesia</option>
       <option value="en">English</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ar">عربي</option>
     </select>
   </div>
 
-  <!-- Sections di bawah ini tetap sama -->
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Yass Production adalah penyedia layanan sablon cup, plastik, dan kemasan yang berlokasi di Bandung. Kami membantu UMKM dan kafe meningkatkan branding mereka melalui kemasan yang menarik dan berkualitas.</p>
+  </section>
+
+  <section id="produk">
+    <h2>Katalog Produk & Price List</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Sablon Cup 12oz <span class="badge">Best Seller</span></h3>
+        <p>Harga: Rp 500 / cup</p>
+      </div>
+      <div class="product">
+        <h3>Sablon Plastik PE</h3>
+        <p>Harga: Rp 700 / pcs</p>
+      </div>
+      <div class="product">
+        <h3>Kemasan Kertas Kraft</h3>
+        <p>Harga: Rp 1.200 / pcs</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimonial">
+      <p>"Pelayanan cepat dan hasil sablon sangat bagus!" – Cafe XYZ</p>
+    </div>
+    <div class="testimonial">
+      <p>"Sudah beberapa kali order, selalu memuaskan." – UMKM Bandung</p>
+    </div>
+  </section>
+
+  <section id="mitra">
+    <h2>Mitra Kami</h2>
+    <div class="partner">
+      <p>Kopi Kenangan, Kopi Janji Jiwa, Kafe Bandung Hits, dan banyak lainnya.</p>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>📍 Alamat: Jl. Ibrahim Adjie Gg. Kebon Kangkung 2 No. 11 Bandung</p>
+    <p>📞 Telepon/WhatsApp: 0895 3819 33300 - 0821 4471 1035</p>
+    <p>✉️ Email: yass.production23@gmail.com</p>
+  </section>
+
+  <div class="wa-order">
+    <a id="btn-order" href="https://wa.me/62895381933300" target="_blank">Pesan Sekarang via WhatsApp</a>
+  </div>
 
   <footer>
-    <div>&copy; 2025 Yass Production. All rights reserved.</div>
-    <div class="social-icons">
-      <a href="https://facebook.com/yassproduction" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com/yassproduction" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
+    <p>&copy; 2025 Yass Production. All rights reserved.</p>
   </footer>
 </body>
 
